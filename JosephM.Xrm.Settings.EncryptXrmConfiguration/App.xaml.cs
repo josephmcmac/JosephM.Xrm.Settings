@@ -8,6 +8,7 @@ using System.Windows;
 using JosephM.ObjectEncryption;
 using JosephM.Prism.Infrastructure.Prism;
 using JosephM.Xrm.Settings.EncryptXrmConfiguration.Module;
+using JosephM.Xrm.Settings.Test;
 
 namespace JosephM.Xrm.Settings.EncryptXrmConfiguration
 {
@@ -21,7 +22,7 @@ namespace JosephM.Xrm.Settings.EncryptXrmConfiguration
             base.OnStartup(e);
 
             var prism = new PrismApplication("Test Prism Application");
-            prism.AddModule<ObjectEncryptModule<EncryptXrmConfigurationDialog, XrmConfiguration>>();
+            prism.AddModule<ObjectEncryptModule<EncryptXrmConfigurationDialog, TestXrmConfiguration>>();
             prism.Run();
         }
     }

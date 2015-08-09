@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.Serialization;
+using System.Text;
 using System.Threading;
 using JosephM.Xrm.Settings.Core;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -12,7 +15,7 @@ using Microsoft.Xrm.Sdk.Query;
 
 namespace JosephM.Xrm.Settings.Test
 {
-    [DeploymentItem("XrmConfiguration.xml")]
+    [DeploymentItem("TestXrmConfiguration.xml")]
     [TestClass]
     public abstract class XrmTest
     {
@@ -31,7 +34,18 @@ namespace JosephM.Xrm.Settings.Test
         public XrmService XrmService { get; private set; }
         protected IUserInterface UI { get; private set; }
 
-        public abstract IXrmConfiguration XrmConfiguration { get; }
+        public virtual IXrmConfiguration XrmConfiguration
+        {
+            get
+            {
+                var readEncryptedFonfig = File.ReadAllText("TestXrmConfiguration.xml");
+                var decrypt = StringEncryptor.Decrypt(readEncryptedFonfig);
+                var deserialiser = new DataContractSerializer(typeof(TestXrmConfiguration));
+                var byteArray = Encoding.UTF8.GetBytes(decrypt);
+                using (var stream = new MemoryStream(byteArray))
+                    return (TestXrmConfiguration)deserialiser.ReadObject(stream);
+            }
+        }
 
         public string ExecutionPath
         {

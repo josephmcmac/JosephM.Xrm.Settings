@@ -132,6 +132,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\JosephM.Xrm.Settings.Test\JosephM.Xrm.Settings.Test.csproj">
+      <Project>{D2DD2587-B577-487B-BF48-6B364D9958BD}</Project>
+      <Name>JosephM.Xrm.Settings.Test</Name>
+    </ProjectReference>
     <ProjectReference Include="..\JosephM.Xrm.Settings\JosephM.Xrm.Settings.csproj">
       <Project>{C1680534-FA12-4C76-A7A4-4F1843D7DCC2}</Project>
       <Name>JosephM.Xrm.Settings</Name>
