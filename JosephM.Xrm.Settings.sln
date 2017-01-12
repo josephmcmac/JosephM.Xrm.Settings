@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{DD9FEB83-A320-471C-88BE-72A00AC90D92}"
 	ProjectSection(SolutionItems) = preProject
@@ -13,12 +13,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{DD9FEB83-A32
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JosephM.Xrm.Settings", "JosephM.Xrm.Settings\JosephM.Xrm.Settings.csproj", "{C1680534-FA12-4C76-A7A4-4F1843D7DCC2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{734B30FD-AC70-4EC3-A61D-64A3FE851377}"
-	ProjectSection(SolutionItems) = preProject
-		Solution Items\Customisations.xls = Solution Items\Customisations.xls
-		Solution Items\JosephMcGregorSettings_unmanaged.zip = Solution Items\JosephMcGregorSettings_unmanaged.zip
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JosephM.Xrm.Settings.Test", "JosephM.Xrm.Settings.Test\JosephM.Xrm.Settings.Test.csproj", "{D2DD2587-B577-487B-BF48-6B364D9958BD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JosephM.Xrm.Settings.EncryptXrmConfiguration", "JosephM.Xrm.Settings.EncryptXrmConfiguration\JosephM.Xrm.Settings.EncryptXrmConfiguration.csproj", "{EEED9F66-183F-41EA-A07C-14A17C05811F}"
@@ -27,6 +21,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReadMe", "ReadMe", "{6914AC
 	ProjectSection(SolutionItems) = preProject
 		ReadMe\Configuring Test Script.docx = ReadMe\Configuring Test Script.docx
 		ReadMe\Solution Details.docx = ReadMe\Solution Details.docx
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JosephM.Xrm.Settings.WebResources", "JosephM.Xrm.Settings.WebResources\JosephM.Xrm.Settings.WebResources.csproj", "{81EEE6F7-70E4-4F2E-9814-744B921C5280}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{F045D56D-2B2B-4A85-AB76-F9E2C8C6E999}"
+	ProjectSection(SolutionItems) = preProject
+		SolutionItems\Customisations.xls = SolutionItems\Customisations.xls
+		SolutionItems\JosephMcGregorSettings_1_0_0_0.zip = SolutionItems\JosephMcGregorSettings_1_0_0_0.zip
+		SolutionItems\solution.xrmconnection = SolutionItems\solution.xrmconnection
 	EndProjectSection
 EndProject
 Global
@@ -47,6 +50,10 @@ Global
 		{EEED9F66-183F-41EA-A07C-14A17C05811F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEED9F66-183F-41EA-A07C-14A17C05811F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEED9F66-183F-41EA-A07C-14A17C05811F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81EEE6F7-70E4-4F2E-9814-744B921C5280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81EEE6F7-70E4-4F2E-9814-744B921C5280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81EEE6F7-70E4-4F2E-9814-744B921C5280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81EEE6F7-70E4-4F2E-9814-744B921C5280}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

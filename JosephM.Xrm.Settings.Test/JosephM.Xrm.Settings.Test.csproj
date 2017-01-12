@@ -81,7 +81,12 @@
       <Name>JosephM.Xrm.Settings</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="..\SolutionItems\solution.xrmconnection">
+      <Link>solution.xrmconnection</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="TestXrmConfiguration.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

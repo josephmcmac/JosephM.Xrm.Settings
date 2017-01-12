@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <style type="text/css">
+        p th td {
+            font-family: Segoe UI, Tahoma, Arial;
+            font-size: 11px;
+            color: #444444;
+        }
+
+        th {
+            vertical-align: top;
+            text-align: left;
+            margin: 5px;
+            border-style: solid;
+            border-width: 1px;
+            padding: 5px;
+        }
+
+        td {
+            vertical-align: top;
+            text-align: left;
+            margin: 5px;
+            border-style: solid;
+            border-width: 1px;
+            padding: 5px;
+        }
+    </style>
+    <h1>Joseph Mcgregor Settings</h1>
+<p>This solution adds a settings entity with the capability to reference fields added to that settings entity in custom workflows</p>
+<p>Fields in the settings are referenced in workflows by using the custom workflow activity JosephM.Xrm.Settings -> GetSettingsWorkflowActivity</p>
+<p>An examples of use is where a queue or user should be configured for sending/receiving emails created in workflows and this needs to be different in various environments or has the potential to change</p>
+</body>
+</html>
